@@ -2,7 +2,7 @@ package stepDef;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
 import org.testng.asserts.Assertion;
 
@@ -15,7 +15,7 @@ public class Steps {
 	@Given("^Open Chrome Browser$")
 	public void openBrowser() throws Throwable
 	{
-		driver = new ChromeDriver();
+		driver = new EdgeDriver();
 	}
 	
 	@When("^Enter the Application URL$")
